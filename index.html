@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna Eletrônica</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="urna">
+        <div class="screen">
+            <div class="sub">
+                <div class="sub_screen_1_left">
+                    <div class="sub_screen_1_1">
+                        <span>SEU VOTO PARA</span>
+                    </div>
+                    <div class="sub_screen_1_2">
+                        <span>PRESIDENTE</span>
+                    </div>
+                    <div class="sub_screen_1_3">
+                    <div class="square piscar"></div>
+                    <div class="square"></div>
+                    </div>
+                    <div class="sub_screen_1_4">
+                        NOME:<br/>
+                        Partido<br/>
+                        VICE:
+                    </div>
+                    </div>    
+                <div class="sub_screen_1_right">
+                    <div class="right_img">
+                        <img src="assets/images/davila.png" alt="PRESIDENTE">
+                    </div>
+                    <div class="right_img small">
+                        <img src="assets/images/tiago.png" alt="VICE-PRESIDENTE">
+                    </div>
+
+            </div>
+            </div>
+            <div class="sub_screen_2">
+                Aperte a tecla: <br/>
+                CONFIRMA para CONFIRMAR este voto <br/>
+                CORRIGE para REINICIAR este voto
+
+            </div>
+
+        </div>
+        <div class="keyboard">
+            <div class="justica_eleitoral">
+                <img src="assets/images/justiça_eleitoral.png" alt="JUSTIÇA ELEITORAL">
+                JUSTIÇA ELEITORAL
+            </div>
+            <div class="keyboard_li">
+                <div class="keyboard_button" onclick="clicou('1')"> 1 </div>
+                <div class="keyboard_button" onclick="clicou('2')"> 2 </div>
+                <div class="keyboard_button" onclick="clicou('3')"> 3 </div>
+            </div>
+            <div class="keyboard_li">
+                <div class="keyboard_button" onclick="clicou('4')"> 4 </div>
+                <div class="keyboard_button" onclick="clicou('5')"> 5 </div>
+                <div class="keyboard_button" onclick="clicou('6')"> 6 </div>
+            </div>
+            <div class="keyboard_li">
+                <div class="keyboard_button" onclick="clicou('7')"> 7 </div>
+                <div class="keyboard_button" onclick="clicou('8')"> 8 </div>
+                <div class="keyboard_button" onclick="clicou('9')"> 9 </div>
+            </div>
+            <div class="keyboard_li">
+                <div class="keyboard_button" onclick="clicou('0')"> 0 </div>
+            </div>
+            <div class="keyboard_li">
+                <div class="keyboard_button_branco" onclick="branco()"> BRANCO </div>
+                <div class="keyboard_button_corrige" onclick="corrige()"> CORRIGE </div>
+                <div class="keyboard_button_confirma" onclick="confirma()"> CONFIRMA </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <script src="etapas.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
